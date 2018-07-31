@@ -125,7 +125,7 @@ class mod_attendance_add_form extends moodleform {
                             array('maxfiles' => EDITOR_UNLIMITED_FILES, 'noclean' => true, 'context' => $modcontext));
         $mform->setType('sdescription', PARAM_RAW);
 	
-	$mform->addElement('header', 'test', 'Testing Header');
+	$mform->addElement('header', 'testheader', 'Testing Header');
 
         if (!empty($pluginconfig->enablecalendar)) {
             $mform->addElement('checkbox', 'calendarevent', '', get_string('calendarevent', 'attendance'));
